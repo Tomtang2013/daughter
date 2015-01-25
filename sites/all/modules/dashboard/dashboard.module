@@ -1,0 +1,77 @@
+<?php
+
+// $Id: dashboard.info,v 1.4 2011/07/04 13:25:57 dries Exp $
+
+/**
+ * Implementation of hook_init
+ */
+function dashboard_init() {
+//    drupal_add_css(drupal_get_path('module', 'dashboard') . '/css/dashboard.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+}
+
+function dashboard_js_alter(&$javascript) {
+  // Swap out jQuery to use an updated version of the library.
+  $javascript['misc/jquery.js']['data'] = drupal_get_path('module', 'dashboard') . '/jquery.js';
+}
+
+/**
+ * Implements hook_help().
+ */
+function dashboard_help($path, $arg) {
+    switch ($path) {
+        case 'admin/help#dashboard':
+            $output = '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('主页模块');
+            return $output;
+    }
+}
+
+/**
+ * Implements hook_permission().
+ */
+function dashboard_permission() {
+    return array(
+        'dashboard' => array(
+            'title' => t('千金'),
+        ),
+    );
+}
+
+function dashboard_menu() {
+    $items = array();
+    $items['dashboard'] = array(
+        'title' => t('千金'),
+        'page callback' => 'dashboard_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'weight' => -47,
+    );
+    
+    $items['newscenter/companynews'] = array(
+        'title' => t('千金'),
+        'page callback' => 'newscenter_companynews_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/news_center.inc',
+        'weight' => -47,
+    );
+
+    
+    $items['companyprofile'] = array(
+        'title' => t('千金'),
+        'page callback' => 'companyprofile_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/companyprofile.inc',
+        'weight' => -47,
+    );
+    
+    return $items;
+}
+
+
+function dashboard_call_back() {
+    $pageContent = '';
+    return $pageContent;
+}
+
