@@ -62,9 +62,37 @@ function dashboard_menu() {
         'page callback' => 'companyprofile_call_back',
         'access arguments' => array('dashboard'),
 //        'access arguments' => array(1),
-        'file' => 'inc/companyprofile.inc',
+        'file' => 'inc/company_profile.inc',
         'weight' => -47,
     );
+    
+    $items['brand'] = array(
+        'title' => t('千金'),
+        'page callback' => 'brand_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/brand.inc',
+        'weight' => -47,
+    );
+    
+     $items['product'] = array(
+        'title' => t('千金'),
+        'page callback' => 'product_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/product.inc',
+        'weight' => -47,
+    );
+     
+      $items['contactus'] = array(
+        'title' => t('千金'),
+        'page callback' => 'contact_us_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/contact_us.inc',
+        'weight' => -47,
+    ); 
+     
     
     return $items;
 }
