@@ -48,7 +48,7 @@ function dashboard_menu() {
     );
     
     $items['newscenter/companynews'] = array(
-        'title' => t('千金'),
+        'title' => t('公司新闻'),
         'page callback' => 'newscenter_companynews_call_back',
         'access arguments' => array('dashboard'),
 //        'access arguments' => array(1),
@@ -58,7 +58,7 @@ function dashboard_menu() {
 
     
     $items['companyprofile'] = array(
-        'title' => t('千金'),
+        'title' => t('公司信息'),
         'page callback' => 'companyprofile_call_back',
         'access arguments' => array('dashboard'),
 //        'access arguments' => array(1),
@@ -67,7 +67,7 @@ function dashboard_menu() {
     );
     
     $items['brand'] = array(
-        'title' => t('千金'),
+        'title' => t('品牌介绍'),
         'page callback' => 'brand_call_back',
         'access arguments' => array('dashboard'),
 //        'access arguments' => array(1),
@@ -76,7 +76,7 @@ function dashboard_menu() {
     );
     
      $items['product'] = array(
-        'title' => t('千金'),
+        'title' => t('产品专柜'),
         'page callback' => 'product_call_back',
         'access arguments' => array('dashboard'),
 //        'access arguments' => array(1),
@@ -85,7 +85,7 @@ function dashboard_menu() {
     );
      
       $items['contactus'] = array(
-        'title' => t('千金'),
+        'title' => t('联系我们'),
         'page callback' => 'contact_us_call_back',
         'access arguments' => array('dashboard'),
 //        'access arguments' => array(1),
@@ -93,6 +93,14 @@ function dashboard_menu() {
         'weight' => -47,
     ); 
      
+    $items['qanda'] = array(
+        'title' => t('健康咨询'),
+        'page callback' => 'qanda_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/qanda.inc',
+        'weight' => -47,
+    ); 
     
     return $items;
 }

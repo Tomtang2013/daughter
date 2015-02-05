@@ -46,7 +46,7 @@
             <li><a href="#">千金俱乐部</a></li>
              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">健康咨询</b></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">专家答疑</a></li>
+                    <li><a href="<?php print $base_path?>qanda">专家答疑</a></li>
                     <li><a href="#">健康分享</a></li>
                     <li><a href="#">千金小知识</a></li>
                 </ul>
