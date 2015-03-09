@@ -4,7 +4,7 @@ core = 7.x
 base theme = bootstrap
 
 stylesheets[all][] = css/docs.css
-
+stylesheets[all][] = css/header.css
 
 ;scripts[] = js/jquery.localscroll-1.2.7-min.js
 ;settings[shortcut_module_link] = 0
