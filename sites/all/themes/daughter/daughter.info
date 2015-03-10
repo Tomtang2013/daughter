@@ -8,6 +8,7 @@ stylesheets[all][] = css/header.css
 stylesheets[all][] = css/companyinfo.css
 stylesheets[all][] = css/newscenter.css
 stylesheets[all][] = css/brand.css
+stylesheets[all][] = css/qanda.css
 
 
 ;scripts[] = js/jquery.localscroll-1.2.7-min.js
