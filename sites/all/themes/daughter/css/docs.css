@@ -3,11 +3,12 @@
     min-width:1280px;
     max-width:1280px;
     margin: 0 auto;
+   
 }
 
 div { font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu; }
 
-.main-content .container{ width:1024px;margin: 0 auto; }
+.main-content .container{ width:1280px;margin: 0 auto;  padding: 0 0 0 0; }
 
 
 #second_header .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
@@ -68,7 +69,7 @@ div { font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细�
 
 
 .dashboard-back-img{
-    background: url(../images/banner1.jpg) no-repeat;
+    background: url(../images/home/banner1.jpg) no-repeat;
     min-height:796px;
     color: #FFFFFF; font-size:14px;font-family:Microsoft YaHei,simsun,Arial,Helvetica,sans-serif;border:0px;
 }
@@ -86,23 +87,23 @@ div { font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细�
 }
 
 .dashboard-item-img-1{
-    background: url(../images/home_qianjin.jpg) no-repeat;
+    background: url(../images/home/home_qianjin.jpg) no-repeat;
 }
 
 .dashboard-item-img-2{
-    background: url(../images/home_yaomian.jpg) no-repeat;
+    background: url(../images/home/home_yaomian.jpg) no-repeat;
 }
 
 .dashboard-item-img-3{
-    background: url(../images/home_chuanmian.jpg) no-repeat;
+    background: url(../images/home/home_chuanmian.jpg) no-repeat;
 }
 
 .dashboard-item-img-4{
-    background: url(../images/home_yimian.jpg) no-repeat;
+    background: url(../images/home/home_yimian.jpg) no-repeat;
 }
 
 .dashboard-item-img-5{
-    background: url(../images/home_jingmian.jpg) no-repeat;
+    background: url(../images/home/home_jingmian.jpg) no-repeat;
 }
 .menubox{
     padding:0 40px 40px 40px; width: 300px;
@@ -126,3 +127,8 @@ div { font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细�
     width:100%;height: 1px;background-color: #cccccc;display: inline-block;margin-bottom: 10px;
 
 }
+
+.second_header{
+    height:235px;
+}
+ 
