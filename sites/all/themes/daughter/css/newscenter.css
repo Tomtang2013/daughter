@@ -1,0 +1,15 @@
+.news-left-menu{
+    width:350px;
+    float:left;
+}
+
+.news-right-content{
+     width:930px;
+     float:left;
+}
+
+.news-right-content-title{
+    font-style: italic;
+    line-height:31px;
+    color:#0594d8;
+}

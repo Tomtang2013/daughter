@@ -1,0 +1,31 @@
+.brand-left{
+    width:350px;
+    float:left;
+}
+
+.brand-left-img{
+    padding-top:60px;
+    padding-left:100px;
+}
+
+
+.brand-right{
+    width:930px;
+    float:left;
+}
+
+.brand-right-content{
+    width:580px;
+    float:left;
+}
+.brand-right-img{
+    width:350px;
+    float:left;
+}
+
+.brand-bottom{
+    width:1080px;
+    float:right;
+}
+
+

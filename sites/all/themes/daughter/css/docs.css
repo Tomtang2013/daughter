@@ -106,29 +106,57 @@ div { font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细�
     background: url(../images/home/home_jingmian.jpg) no-repeat;
 }
 .menubox{
-    padding:0 40px 40px 40px; width: 300px;
+    /*padding:0 40px 40px 40px;*/
+    width: 200px;
+    margin-left: 70px;
+}
+
+.menubox_item{
+    margin-left:50px;
+    width:160px;
 }
 
 
-.menubox .item-header{
-    background-color: #0594d8;text-align: center;margin-top:20px;margin-bottom: 50px;
-}
+
 
 .menubox .item-header .item-text{
-    color:white;display: inline-block;margin-top:5px;margin-bottom: 10px;font-weight: bold;
-    font-size: 20px;margin-left:-40px;
+    color:white;display: inline-block;
+    margin-top:5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+   
 }
 
 .menubox .item-text{
     color:#0594d8;padding-left: 16px;font-size: 18px;//font-weight: bold;
+    text-align: right;
+    width:170px;
+    margin-left: 70px;
 }
 
 .menubox .item-bar{
-    width:100%;height: 1px;background-color: #cccccc;display: inline-block;margin-bottom: 10px;
-
+    width:170px;
+    height: 1px;
+    background-color:  #cccccc;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 70px;
 }
 
 .second_header{
     height:235px;
 }
  
+.block-title{
+    display:none;
+}
+
+.menubox_item{
+    text-align: center;
+}
+
+
+.menubox_item a{ text-decoration:none; }
+
+.menubox_item a:hover{ text-decoration:none; }

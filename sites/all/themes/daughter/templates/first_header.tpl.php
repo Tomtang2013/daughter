@@ -26,7 +26,7 @@
                     </ul>
                 </li>
                 <li class="stmenu">
-                    <h3><a href="#" class="xialaguang"><span>千金棉介绍</br>Brand</span></a></h3>    
+                    <h3><a href="<?php print $base_path ?>brand" class="xialaguang"><span>千金棉介绍</br>Brand</span></a></h3>    
                     <ul class="children">    
                         <li><h3><a href="#"><span>千金药棉</span></a></h3></li>
                         <li><h3><a href="#"><span>千金净棒</span></a></h3></li>
