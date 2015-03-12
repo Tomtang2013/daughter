@@ -102,6 +102,15 @@ function dashboard_menu() {
         'weight' => -47,
     ); 
     
+    $items['club'] = array(
+        'title' => t('千金俱乐部'),
+        'page callback' => 'club_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/club.inc',
+        'weight' => -47,
+    ); 
+    
     return $items;
 }
 

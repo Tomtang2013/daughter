@@ -16,9 +16,9 @@ $theme = drupal_get_path('theme', 'daughter');
                     联系我们
                 </div>
                 <div class="contact_us_left_top_content">
-                    <div  class="contact_us_left_top_content_item"><a href="#">人才战略</a></div>
-                    <div  class="contact_us_left_top_content_item"><a href="#">联系我们</a></div>
-                    <div  class="contact_us_left_top_content_item"><a href="#">投诉意见</a></div>
+                    <div  class="contact_us_left_top_content_item"><span class="blue-rect"></span><a href="#">人才战略</a></div>
+                    <div  class="contact_us_left_top_content_item"><span class="blue-rect"></span><a href="#">联系我们</a></div>
+                    <div  class="contact_us_left_top_content_item"><span class="blue-rect"></span><a href="#">投诉意见</a></div>
                 </div>
             </div>
             <div class="contact_us_left_bottom">

@@ -1,0 +1,46 @@
+#club_header_left{
+    background: url("../images/club/club_barner_l.jpg") no-repeat  transparent;
+    width:815px;
+    height:264px;
+    display:inline-block;
+    float: left;
+}
+
+.club_content{
+    padding-top:50px;
+    width:1024px;
+    margin:0 auto;
+}
+
+
+.club_content_top{
+    height:400px;
+}
+
+
+.club_content_top_left{
+    float:left;
+    width:700px;
+}
+.club_content_top_left_content{
+    padding-left:100px;
+}
+.club_content_top_right{
+    float:right;
+    width:324px;
+}
+
+.club_content_bottom{
+    display:inline-block;
+}
+
+.club_content_bottom_left{
+    float:left;
+    width:324px;
+}
+
+.club_content_bottom_right{
+    float:left;
+    width:700px;
+    height:300px;
+}

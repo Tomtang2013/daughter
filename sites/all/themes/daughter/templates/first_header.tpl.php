@@ -43,7 +43,7 @@
                         <li><h3><a href="#"><span>千金纯棉</span></a></h3></li>
                     </ul>
                 </li>
-                <li class="stmenu"><h3><a href="#" class="xialaguang"><span>千金俱乐部</br>Club</span></a></h3></li>
+                <li class="stmenu"><h3><a href="<?php print $base_path ?>club" class="xialaguang"><span>千金俱乐部</br>Club</span></a></h3></li>
                 <li class="stmenu">
                     <h3><a href="<?php print $base_path ?>qanda" class="xialaguang"><span>健康咨询</br>QAQ</span></a></h3>   
                     <ul class="children">    
