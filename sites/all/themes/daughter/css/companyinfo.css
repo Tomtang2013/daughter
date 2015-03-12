@@ -39,7 +39,6 @@
     line-height: 37px;
     margin-left:50px;
     margin-bottom:20px;
-    /*font-style:*/ 
 }
 
 .company_item_content{
@@ -67,4 +66,17 @@
     margin-right:10px;
     margin-top:10px;
     margin-bottom:10px;
+}
+
+.company_image_box{
+    display:inline-block;
+    margin:10px auto;
+
+}
+
+.company_image{
+    margin-left:20px;
+    margin-right:20px;
+    width:290px;
+    height:200px;
 }

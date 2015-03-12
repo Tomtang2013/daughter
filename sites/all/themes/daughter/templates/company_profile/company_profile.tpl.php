@@ -24,9 +24,20 @@
                   <?php print $block_qianjinjingya_output;?>
              </div>
         </div>
-         <div class='' style="">
+        <div class='' style="">
             <div class='content_item_title' style="">About/企业风采</div>
-            <div class='company_item_content' style='height:500px;border: 1px solid;'></div>
+            <div class='company_item_content' style='height:400px;'>
+                <div class="company_image_box">
+                    <img style="" src="<?php print $theme ?>/images/companyInfo/1.jpg" class="img-thumbnail img-responsive company_image" alt="Responsive image">
+                    <img src="<?php print $theme ?>/images/companyInfo/2.jpg" class="img-thumbnail img-responsive company_image" alt="Responsive image">
+                    <img src="<?php print $theme ?>/images/companyInfo/3.jpg" class="img-thumbnail img-responsive company_image" alt="Responsive image">
+                </div>
+                <div class="company_image_box">
+                    <img src="<?php print $theme ?>/images/companyInfo/4.jpg" class="img-thumbnail img-responsive company_image" alt="Responsive image">
+                    <img src="<?php print $theme ?>/images/companyInfo/5.jpg" class="img-thumbnail img-responsive company_image" alt="Responsive image">
+                    <img src="<?php print $theme ?>/images/companyInfo/6.jpg" class="img-thumbnail img-responsive company_image" alt="Responsive image">
+                </div>
+            </div>
         </div>
          <div class='' style="">
            <div class='content_item_title' style="">About/企业荣誉</div>
@@ -36,7 +47,6 @@
                <img src="<?php print $theme?>/images/companyInfo/ry3.png" class="img-thumbnail img-responsive company_item_rongyu_img" alt="Responsive image">
                <img src="<?php print $theme?>/images/companyInfo/ry4.png" class="img-thumbnail img-responsive company_item_rongyu_img" alt="Responsive image">
                <img src="<?php print $theme?>/images/companyInfo/ry5.png" class="img-thumbnail img-responsive company_item_rongyu_img" alt="Responsive image">
-               
            </div>
         </div>
     </div>
