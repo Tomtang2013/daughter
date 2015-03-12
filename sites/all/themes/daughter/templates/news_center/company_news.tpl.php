@@ -26,9 +26,9 @@
                     </div>
                     <div class="news-serch-box-form" >  
                         <select>
-                            <option>千金静棉花</option>
+                            <option>千金静棉</option>
                         </select>
-                        <div class="news-serch-box-form-btn">检索</div>
+                        <div class="news-serch-box-form-btn"><a href="#">搜索</a></div>
                     </div>
                    
                 </div>
@@ -36,7 +36,7 @@
             <div class="news-middle-bar"></div>
             <div class='news-right-content'>
                 <div> <h2  class="news-right-content-title" >News center</h2> </div>
-                <div style="width:100%;height: 4px;background-color: #0594d8;display: inline-block;margin-bottom: 10px; "></div>
+                <div class="news_title_down" ></div>
             </div>
         </div>
     </div>
