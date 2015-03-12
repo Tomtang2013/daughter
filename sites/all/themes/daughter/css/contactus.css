@@ -1,0 +1,119 @@
+#contact_us_header_left{
+    background: url("../images/contactus/contact_barner_l.jpg") no-repeat  transparent;
+    width:815px;
+    height:237px;
+    display:inline-block;
+    float: left;
+}
+
+.contact_us_top{
+    margin-top:50px;
+     margin-left:280px;
+}
+.contact_us_left{
+    width:350px;
+    float:left;
+    /*padding-top:30px;*/
+    display:inline-block;
+}
+
+.contact_us_left_top {
+    border:1px solid #cccccc;
+    margin:45px 50px 50px 50px;
+    width:300px;
+}
+
+.contact_us_left_top_header{
+    font-size:24px;
+    line-height:30px;
+    margin:10px 10px 10px 20px;
+}
+
+.contact_us_left_top_content{
+    margin:10px 10px 20px 20px;
+    padding-bottom:10px;
+    border-top: 5px solid #0593D7;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    
+}
+
+.contact_us_left_top_content_item{
+    line-height:35px;
+    margin-left:20px;
+}
+
+.contact_us_left_top_content_item a{
+    font-size:16px;
+    text-decoration:none;
+}
+.contact_us_left_top_content_item a:hove{
+    
+}
+
+.contact_us_left_bottom{
+    
+}
+
+.contact_us_left_bottom_content{
+    margin:10px 10px 20px 20px;
+    padding-bottom:10px;
+    border-top: 1px solid #cccccc;
+    padding-top:20px;
+}
+
+.contact_us_left_bottom_content p{
+    font-size:16px;
+    line-height:30px;
+}
+
+.contact_us_right{
+    width: 830px;
+    float: left;
+    /*padding-top:30px;*/
+}
+
+.contact_us_right_top .content_item_title{
+    margin-left:0px;
+    
+}
+
+.contact_us_right_content{
+    padding-left:80px;
+    padding-top:40px;
+}
+
+.contact_us_right_bottom{
+     border:1px solid #cccccc;
+     height:400px;
+     width:800px;
+     margin:60px 20px 20px 80px;
+     padding:20px 60px 20px 20px;
+}
+
+.contact_us_right_bottom_title{
+    background: url("../images/contactus/contact_r_title.png") no-repeat  transparent;
+    width:676px;
+    height:34px;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.contact_us_right_bottom_mm{
+    background: url("../images/contactus/contact_r_mm.jpg") no-repeat  transparent;
+    width:201px;
+    height:286px;
+    display:inline-block;
+    float:left;
+    margin:20px 20px 20px 40px;
+}
+
+.contact_us_right_bottom_content{
+    float:left;
+    margin-left:30px;
+}
+
+.contact_us_right_bottom_content_item{
+    font-size:18px;
+    line-height:30px;
+}

@@ -9,7 +9,7 @@ stylesheets[all][] = css/companyinfo.css
 stylesheets[all][] = css/newscenter.css
 stylesheets[all][] = css/brand.css
 stylesheets[all][] = css/qanda.css
-
+stylesheets[all][] = css/contactus.css
 
 ;scripts[] = js/jquery.localscroll-1.2.7-min.js
 ;settings[shortcut_module_link] = 0
