@@ -13,7 +13,7 @@ foreach ($result as $row) {
     if($items->type != 2) continue;
     $items->nid = $row->nid;
     $items->title = $node->title;
-    $items->type = $node->type;
+//    $items->type = $node->type;
     $items->created = $node->created;
     $items->changed = $node->changed;
     $url = file_create_url($node->field_img['und'][0]['uri']);

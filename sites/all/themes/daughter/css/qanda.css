@@ -6,6 +6,7 @@
 .qanda-right-content{
      width:930px;
      float:left;
+     padding-left:70px;
 }
 
 #qanda_second_header_left{
@@ -14,4 +15,73 @@
     height:235px;
     display:inline-block;
     float: left;
+}
+
+
+
+.qanda-right-content-header{
+    border:1px solid #666666;
+    width:610px;
+}
+
+.qanda-header{
+    padding-left:350px;
+}
+
+.qanda-right-content-cl{
+    display:inline-table;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size: 16px;
+}
+
+.qanda-right-content-h-1{
+    width:100px;
+    border-right: 1px solid #666666;
+}
+
+.qanda-right-content-h-2{
+    width:200px;
+    border-right: 1px solid #666666;
+}
+
+.qanda-right-content-h-3{
+      width:300px;
+}
+
+.qanda-right-content-cl-1{
+    width:100px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.qanda-right-content-cl-2{
+    width:200px;
+}
+
+.qanda-right-content-cl-3{
+      width:300px;
+}
+
+.qanda-question-item{
+    border-bottom: 1px solid #666666;
+    width:610px;
+}
+
+.qanda-question-item-first{
+     width:610px;
+}
+
+.qanda-right-content-cl-4{
+    width:500px;
+    text-align: left;
+}
+
+.qanda-answer-item{
+    background: url("../images/qanda/QA_A_bk.png") no-repeat  transparent;
+    background-position:30px 0px;;
+    width:610px;
+    height:90px;
+    display:inline-table;
 }

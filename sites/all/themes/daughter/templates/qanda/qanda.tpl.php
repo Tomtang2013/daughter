@@ -1,7 +1,46 @@
-<?php ?>
+<?php 
+global $base_path;
+$result = db_query("SELECT nid FROM node WHERE type = :type order by created desc limit 16", 
+        array(':type' => 'qanda'))->fetchAll();
+
+$qanda_list = array();
+//$paths = array();
+foreach ($result as $row) {
+    $node = node_load($row->nid);
+    $qanda = new stdClass();
+    $qanda->nid = $row->nid;
+    $qanda->title = $node->title;
+    
+    $qanda->created = $node->created;
+    $qanda->changed = $node->changed;
+    $qanda->type = $node->field_qa_type['und'][0]['value'];
+    $qanda->type_dec = prepare_type_dec($qanda->type);
+    $qanda->question = $node->field_question['und'][0]['value'];
+    $qanda->answer = $node->field_answer['und'][0]['value'];
+   
+    dd($qanda);
+    
+    $qanda_list[] = $qanda;
+}
+
+function prepare_type_dec($type){
+    if ($type == 1)
+        return "专家答疑";
+    if ($type == 2)
+        return "健康分享";
+    if ($type == 3)
+        return "千金小知识";
+}
+?>
 <div id="company_profile" >
     <div class="container" style="" >
-        <div class="row" style="padding-top: 50px;">
+        <div class="qanda-header">
+             <div  class="content_item_title" style="margin-right:40px;" > 
+                    Q & A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+       
+        <div class="row" style="padding-top: 20px;">
             <div class='qand-left-menu' >
                 <div  class="menubox">
                     <div  class="content_item_title" style="margin-right:40px;" > 
@@ -23,8 +62,33 @@
             </div>
         
             <div class="qanda-right-content">
-                 <img style='width:100%;height:300px;'
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAADHklEQVR4Xu3XQU7qYABGUZ2yLpbNmhgy1WDSiKTQXi2VkvOG8kl99z9p4f14PH68+afAzALvwMwsZfZVABgQUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLePNgDofD1ynu9/vR0xx7ffjZ8Au3fnfsDde+3rMR3TSYy4MfO/Sx168PfArA5YGtfb1nw3L+ezYN5vwfuHXg55/vdru30+n04w70FzD/cb1nQwPMxSNtwHQJ7fpxtzZQYBYucO8zyvkxNXVHGXt97M40/NlLX2/hHA9/u5e+w1zXmwPo3mNn6pH02+s9/JQXvMDLgrl1R5hzx6l3mLEPxsOH8KnrLXiWq7zVpsHM+Xp875vS9dfqqc8wS19vlRNe+CKbBrNwC283owAwMyKZfBcAhoZUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TL+BPsW85cqjddyAAAAAElFTkSuQmCC" class=" img-responsive img-rounded" alt="Responsive image">
+                <div class="qanda-right-content-header">
+                    <div  class="qanda-right-content-cl qanda-right-content-h-1"> 区分</div>
+                    <div class="qanda-right-content-cl qanda-right-content-h-2"> 分类</div>
+                    <div class="qanda-right-content-cl qanda-right-content-h-3"> 提问和回答</div>
+                </div>
+                    <?php $idx=0; foreach($qanda_list as $qanda):?>
+                        <?php if($idx != 0):?>
+                            <div class="qanda-question-item">
+                        <?php else:?>
+                            <div class="qanda-question-item-first">
+                        <?php endif;?>
+                                <div  class="qanda-right-content-cl qanda-right-content-cl-1"> Q </div>
+                                <div class="qanda-right-content-cl qanda-right-content-cl-2"> <?php print $qanda->type_dec ?></div>
+                                <div class="qanda-right-content-cl qanda-right-content-cl-3"> <?php print $qanda->question ?></div>
+                            </div>
+                                
+                            <div class="qanda-answer-item" 
+                                <?php if($idx != 0):?>
+                                    <div style="display:none;">
+                                <?php endif;?>
+                                >
+                                <div class="qanda-right-content-cl qanda-right-content-cl-1" style="color:#FCA957;"> A </div>
+                                <div class="qanda-right-content-cl qanda-right-content-cl-4"> <?php print $qanda->answer ?></div>
+                            </div>
+                       
+                    <?php $idx++; endforeach;?>
+               
             </div>
         </div>
        
