@@ -1,3 +1,15 @@
+#club{
+	padding-top:40px;
+}
+
+#club h3{
+	color: #888888;
+}
+
+#club p{
+	color: #CCCCCC;
+}
+
 #club_header_left{
     background: url("../images/club/club_barner_l.jpg") no-repeat  transparent;
     width:815px;
@@ -13,21 +25,21 @@
 }
 
 .club_content_top{
-    height:400px;
+    height:460px;
 }
 
 
 .club_content_top_left{
     float: left;
     width: 760px;
-    padding-left: 120px;
+    padding-left: 100px;
 }
 .club_content_top_left_content{
-    padding-left:100px;
+    padding-left: 70px;
 }
 .club_content_top_right{
     float:right;
-    width:420px;
+    width:440px;
 }
 
 .club_content_bottom{
@@ -43,7 +55,7 @@
 .club_content_bottom_right{
     float:left;
     width:700px;
-    height:300px;
+	margin: 0 auto;
 }
 
 .club_content{
@@ -56,3 +68,56 @@
     padding-bottom: 20px;
     padding-top: 20px;
 } 
+
+.content_item_title SPAN{
+	PADDING-RIGHT: 40PX;
+	FONT-SIZE: 18PX;
+}
+
+.club_qa{
+	width: 240px;
+	height: 120px;
+	padding: 10px;
+	margin-left: 50px;
+}
+.club_qa_title{
+	line-height: 45px;
+}
+.club_qa_q span{
+	color: #02A0EA;
+}
+.club_qa_q{
+	font-size: 14px;
+}
+.club_qa_more{
+	width: 280px;
+	text-align: right;
+}
+
+.club_zx_hd{
+	width: 220px;
+	height: 100px;
+	padding: 10px;
+	margin-left: 50px;
+}
+
+.club_zx_hd h4{
+	color: #CCCCCC;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.club_zx_hd h3 a{
+	color: #666666;
+	font-size: 20px;
+	font-weight: normal;
+}
+.club_zx_hd h3 a:hover{
+	color: #02A0EA;
+	text-decoration: none;
+}
+.club_zx_hd_more{
+	width: 190px;
+	text-align: right;
+	margin-left: 50px;
+}
