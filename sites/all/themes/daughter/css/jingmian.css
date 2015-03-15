@@ -1,0 +1,14 @@
+.jingmian{
+    width:1024px;
+    margin:0 auto;
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
+.jingmian-left{
+    background: url("../images/product/jingmian/pdct_jm.jpg") no-repeat  transparent;
+    width:472px;
+    height:1529px;
+    display:block;
+    float: left;
+}

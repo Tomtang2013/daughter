@@ -1,6 +1,5 @@
 <?php
 global $base_path;
-$news_detail_path = $base_path . "news/detail/";
 $result = db_query("SELECT nid FROM node WHERE type = :type order by created desc limit 16", array(':type' => 'news'))->fetchAll();
 
 $news_list = array();

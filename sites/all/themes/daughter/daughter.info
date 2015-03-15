@@ -12,6 +12,7 @@ stylesheets[all][] = css/qanda.css
 stylesheets[all][] = css/contactus.css
 stylesheets[all][] = css/club.css
 stylesheets[all][] = css/product.css
-
+stylesheets[all][] = css/jingmian.css
+stylesheets[all][] = css/yaomian.css
 ;scripts[] = js/jquery.localscroll-1.2.7-min.js
 ;settings[shortcut_module_link] = 0
