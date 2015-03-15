@@ -55,8 +55,8 @@
                 <li class="stmenu">
                     <h3><a href="#" class="xialaguang"><span>立即购买</br>Mall</span></a></h3>   
                     <ul class="children">    
-                        <li><h3><a href="#"><span class="tmall_link"></span></a></h3></li>
-                        <li><h3><a href="#"><span class="weixin_link"></span></a></h3></li>
+                        <li><h3><a href="http://qjdyf.yao.95095.com/" target="_blank"><span class="tmall_link"></span></a></h3></li>
+                        <li><h3><a href="http://mp.weixin.qq.com/bizmall/mallshelf?id=&t=mall/list&biz=MjM5NDY5NDA0Mw==&shelf_id=5&showwxpaytitle=1#wechat_redirect/"  target="_blank"><span class="weixin_link"></span></a></h3></li>
                     </ul>
                 </li>
                 <li class="stmenu"><h3><a href="<?php print $base_path ?>contactus" class="xialaguang"><span>联系我们</br>Contact</span></a></h3></li>
