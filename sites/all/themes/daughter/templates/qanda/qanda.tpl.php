@@ -18,7 +18,6 @@ foreach ($result as $row) {
     $qanda->question = $node->field_question['und'][0]['value'];
     $qanda->answer = $node->field_answer['und'][0]['value'];
    
-    dd($qanda);
     
     $qanda_list[] = $qanda;
 }
@@ -32,6 +31,29 @@ function prepare_type_dec($type){
         return "千金小知识";
 }
 ?>
+
+<script type="text/javascript">
+    jQuery(function(){
+        jQuery('.expandableLink').each(function(){
+            jQuery(this).click(function(){
+//                jQuery('.qanda-answer-item').each(function() {
+//                        jQuery(this).slideUp();
+//                });
+                        
+                var root = jQuery(this).parents().filter('.qand-qa-item');
+                var answer = root.find('.qanda-answer-item');
+
+                if (answer.is(':hidden')) {
+                    answer.slideToggle();
+                } else {
+                    answer.hide();
+                    answer.slideUp();
+                }
+                return false;
+            });
+        });
+    });
+</script>
 <div id="company_profile" >
     <div class="container" style="" >
         <div class="qanda-header">
@@ -68,25 +90,26 @@ function prepare_type_dec($type){
                     <div class="qanda-right-content-cl qanda-right-content-h-3"> 提问和回答</div>
                 </div>
                     <?php $idx=0; foreach($qanda_list as $qanda):?>
+                        <div class="qand-qa-item">
                         <?php if($idx != 0):?>
                             <div class="qanda-question-item">
                         <?php else:?>
                             <div class="qanda-question-item-first">
                         <?php endif;?>
-                                <div  class="qanda-right-content-cl qanda-right-content-cl-1"> Q </div>
+                                <div  class="qanda-right-content-cl qanda-right-content-cl-1"><a class="expandableLink" href=""> Q</a> </div>
                                 <div class="qanda-right-content-cl qanda-right-content-cl-2"> <?php print $qanda->type_dec ?></div>
                                 <div class="qanda-right-content-cl qanda-right-content-cl-3"> <?php print $qanda->question ?></div>
                             </div>
                                 
                             <div class="qanda-answer-item" 
                                 <?php if($idx != 0):?>
-                                    <div style="display:none;">
+                                     style="display:none;"
                                 <?php endif;?>
                                 >
                                 <div class="qanda-right-content-cl qanda-right-content-cl-1" style="color:#FCA957;"> A </div>
                                 <div class="qanda-right-content-cl qanda-right-content-cl-4"> <?php print $qanda->answer ?></div>
                             </div>
-                       
+                       </div>
                     <?php $idx++; endforeach;?>
                
             </div>

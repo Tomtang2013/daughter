@@ -55,6 +55,15 @@ function dashboard_menu() {
         'file' => 'inc/news_center.inc',
         'weight' => -47,
     );
+    
+    $items['newscenter/companynews/detail/'] = array(
+        'title' => t('公司新闻'),
+        'page callback' => 'newscenter_companynews_detail_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/news_center.inc',
+        'weight' => -47,
+    );
 
     
     $items['companyprofile'] = array(

@@ -65,7 +65,7 @@
 }
 
 .qanda-question-item{
-    border-bottom: 1px solid #666666;
+   
     width:610px;
 }
 
@@ -84,4 +84,19 @@
     width:610px;
     height:90px;
     display:inline-table;
+}
+
+.qanda-right-content-cl a{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.qanda-right-content-cl a:hover{
+    text-decoration: none;
+}
+
+.qand-qa-item{
+     border-bottom: 1px solid #666666;
+     width:610px;
 }

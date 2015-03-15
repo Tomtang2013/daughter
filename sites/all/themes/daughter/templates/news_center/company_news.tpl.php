@@ -1,5 +1,6 @@
 <?php
 global $base_path;
+$detail = "newscenter/companynews/detail/";
 $result = db_query("SELECT nid FROM node WHERE type = :type order by created desc limit 16", array(':type' => 'news'))->fetchAll();
 
 $news_list = array();
@@ -12,6 +13,7 @@ foreach ($result as $row) {
     $news->type = $node->type;
     $news->created = $node->created;
     $news->changed = $node->changed;
+    $news->detail = $base_path.$detail.$row->nid;
     $url = file_create_url($node->field_news_img['und'][0]['uri']);
     $url = parse_url($url);
     $news->img = $url['path'];
@@ -91,6 +93,10 @@ uasort($news_list, "compareNewsUpdateDate");
                                             <div>
                                                 <?php print nl2br($news->desc); ?>
                                             </div>
+                                            <div style="float:right;">
+                                                <a class="news_link" href="<?php print $news->detail;?>">
+                                                    显示全文</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div style="clear:both;"></div>
@@ -101,7 +107,7 @@ uasort($news_list, "compareNewsUpdateDate");
                                     <?php else: ?>
                                         <li  class="news_item" >
                                     <?php endif; ?>
-                                    <a class="news_link" href="#">
+                                        <a class="news_link" href="<?php print $news->detail;?>">
                                         <?php print $news->title; ?></a>
                                     <span style="float:right;">[ <?php print date("Y-m-d", $news->created); ?> ]</span></li>
                                 <?php endif; ?>
