@@ -44,18 +44,28 @@
 
 .yaomian-item-desc{
     color:#0593D7;
+    padding-bottom:5px;
     margin-bottom:5px;
     margin-top:5px;
+    border-bottom:1px dotted #FCFAAD;;
+    
 }
 .yaomian-item-price{
     float:right;
 }
-
+.yaomian-item-icon{
+    width:12px; height:12px;
+    background-color:pink;
+    display:inline-block; 
+    border-radius:25px;
+    margin-top:5px;
+    vertical-align: auto ;
+}
 .yaomian-item-feature{
     color:#0593D7;
     background-color:#FCFAAD;
-    line-height:30px;
-    padding-left:20px;
+    line-height:22px;
+    padding-left:5px;
     -moz-border-radius: 5px;      /* Gecko browsers */
     -webkit-border-radius: 5px;   /* Webkit browsers */
     border-radius:5px;            /* W3C syntax */
@@ -63,4 +73,8 @@
 
 .yaomian-item-body{
     margin-top:10px;
+}
+
+.yaomian-item-feature p{
+    /*display:inline-block;*/
 }

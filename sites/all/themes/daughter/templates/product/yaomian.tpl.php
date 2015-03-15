@@ -6,20 +6,23 @@ $result = db_query("SELECT nid FROM node WHERE type = :type order by created des
 
 $items_list = array();
 
-//$paths = array();
 foreach ($result as $row) {
     $node = node_load($row->nid);
     $items = new stdClass();
+    $items->type = $node->field_type['und'][0]['value'];
+    if($items->type != 2) continue;
     $items->nid = $row->nid;
     $items->title = $node->title;
     $items->type = $node->type;
     $items->created = $node->created;
     $items->changed = $node->changed;
-    $url = file_create_url($node->field_yaomian_img['und'][0]['uri']);
+    $url = file_create_url($node->field_img['und'][0]['uri']);
     $url = parse_url($url);
+    
+    
     $items->img = $url['path'];
     $items->n_body = $node->body['und'][0]['value'];
-    $items->price = $node->field_jiage['und'][0]['value'];
+    $items->price = $node->field_price['und'][0]['value'];
     $items->desc = $node->field_desc['und'][0]['value'];
     $items->feature = $node->field_feature['und'][0]['value'];
     $items_list[] = $items;
@@ -37,28 +40,7 @@ foreach($items_list as $item){
     }
     $idx++;
 }
-//
-//$items_pair = array();
-//foreach($items_list as $item){
-//    $items_pair[] = $item;
-////    dd($item);
-//    if($idx%2==0){
-//        $items_pairs[] = $items_pair;
-//        $items_pair = array();
-//    }
-//    $idx++;
-//}
-//
-//$items_pair = array();
-//foreach($items_list as $item){
-//    $items_pair[] = $item;
-////    dd($item);
-//    if($idx%2==0){
-//        $items_pairs[] = $items_pair;
-//        $items_pair = array();
-//    }
-//    $idx++;
-//}
+
 //dd(count($items_pairs));
 
 ?>
@@ -71,7 +53,7 @@ foreach($items_list as $item){
                     foreach ($items_pairs as $items_pair): ?>
                     <li>
                         <ul class="yaomian-row">
-                            <?php  foreach ($items_pair as $item): dd($item); ?>
+                            <?php  foreach ($items_pair as $item):  ?>
                             <li class="yaomian-item" >
                                 <div>
                                      <img src="<?php print $item->img ?>"
@@ -84,7 +66,11 @@ foreach($items_list as $item){
                                         <span class="yaomian-item-price"><?php print $item->price; ?></span>
                                     </div>
                                     <div  class="yaomian-item-feature">
-                                        <?php print $item->feature; ?>
+                                        <div class="yaomian-item-icon" style="float:left;"></div>
+                                        <div  style="float:left;padding-left:5px;">
+                                            <?php print $item->feature; ?>
+                                        </div>
+                                        <div style="clear:both;" ></div>
                                     </div>
                                     <div class="yaomian-item-body">
                                         <?php print $item->n_body; ?>

@@ -1,5 +1,5 @@
 .jingmian{
-    width:1024px;
+    width:1124px;
     margin:0 auto;
     padding-bottom: 20px;
     padding-top:20px;
@@ -11,4 +11,72 @@
     height:1529px;
     display:block;
     float: left;
+}
+
+
+.jingmian_item_img{
+  width: 320px;
+  height: 200px;
+  float: left;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.jingmian-right{
+    width:500px;
+    float:left;
+}
+.jingmian-row{
+    display:block;
+    width:750px;
+}
+
+.jingmian-item{
+    display:inline-block;
+}
+
+.jingmian-item-main{
+    margin:20px 20px 20px 20px;
+}
+
+.jingmian-item-desc{
+    color:#0593D7;
+    padding-bottom:5px;
+    margin-bottom:5px;
+    margin-top:5px;
+    border-bottom:1px dotted #FCFAAD;;
+    
+}
+.jingmian-item-price{
+    float:right;
+}
+.jingmian-item-icon{
+    width:12px; height:12px;
+    background-color:pink;
+    display:inline-block; 
+    border-radius:25px;
+    margin-top:5px;
+    vertical-align: auto ;
+}
+.jingmian-item-feature{
+    color:#0593D7;
+    background-color:#FCFAAD;
+    line-height:22px;
+    padding-left:5px;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+}
+
+.jingmian-item-body{
+    margin-top:10px;
+}
+
+
+.jingmian-item-feature p{
+    /*display:inline-block;*/
 }
