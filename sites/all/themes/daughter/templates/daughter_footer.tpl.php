@@ -1,5 +1,5 @@
 <?php ?>
-<footer class="bs-footer" role="contentinfo" id="daughter_footer" style="background-color:#0593D7;">
+<div class="bs-footer" role="contentinfo" id="daughter_footer" style="background-color:#0593D7;">
     <div class="container">
         <div class="width:40%;">
             <div style="margin: 0 auto;color:white;">
@@ -22,4 +22,4 @@
             </div>
         </div>
     </div>
-</footer>
+</div>
