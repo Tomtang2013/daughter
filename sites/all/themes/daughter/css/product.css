@@ -4,20 +4,23 @@
 
 .yimian{
    margin: 0 auto;
+   width: 1230px;
+   height: 2060px;
 }
 .yimian-left{
-    width:550px;
-     display:inline-block;
+    width:500px;
+    float: left;
 }
 .yimian-right{
-    width:550px;
-    display:inline-block;
+    width:700px;
+    float: left;
 }
 
 .yimian-left-1{
     background: url("../images/product/yimian/pdct_ym_l_1.png") no-repeat  transparent;
     width:382px;
     height:206px;
+	margin: 0 auto;
     display:block;
 }
 
@@ -25,6 +28,7 @@
     background: url("../images/product/yimian/pdct_ym_l_2.png") no-repeat  transparent;
     width:424px;
     height:304px;
+	margin: 0 auto;
     display:block;
 }
 
@@ -32,21 +36,46 @@
     background: url("../images/product/yimian/pdct_ym_l_3.png") no-repeat  transparent;
     width:500px;
     height:366px;
+	margin: 0 auto;
     display:block;
 }
 
 .yimian-left-4{
     background: url("../images/product/yimian/pdct_ym_l_4.png") no-repeat  transparent;
-    width:772px;
+    width:425px;
     height:212px;
+	margin: 0 auto;
     display:block;
 }
 
+.yimian-left-5{
+    background: url("../images/product/yimian/pdct_ym_l_5.png") no-repeat  transparent;
+    width:425px;
+    height:518px;
+	margin: 0 auto;
+    display:block;
+}
+
+.yimian-left-6{
+    background: url("../images/product/yimian/pdct_ym_l_6.png") no-repeat  transparent;
+    width:385px;
+    height:173px;
+	margin: 0 auto;
+    display:block;
+}
+.yimian-left-7{
+    background: url("../images/product/yimian/pdct_ym_l_7.png") no-repeat  transparent;
+    width:395px;
+    height:255px;
+	margin: 10px auto;
+    display:block;
+}
 
 .yimian-right-1{
     background: url("../images/product/yimian/pdct_ym_r_1.png") no-repeat  transparent;
-    width:624px;
+    width:641px;
     height:504px;
+	margin: 0 auto;
     display:block;
 }
 
@@ -55,6 +84,7 @@
     background: url("../images/product/yimian/pdct_ym_r_2.png") no-repeat  transparent;
     width:611px;
     height:455px;
+	margin: 0 auto;
     display:block;
 }
 
@@ -62,20 +92,29 @@
     background: url("../images/product/yimian/pdct_ym_r_3.png") no-repeat  transparent;
     width:654px;
     height:457px;
+	margin: 0 auto;
     display:block;
+}
+
+.yimian-right-4{
+	
+}
+.yimian-right-4_l, .yimian-right-4_r{
+	float: left;
 }
 
 .yimian-right-4-1{
     background: url("../images/product/yimian/pdct_ym_4_l1.png") no-repeat  transparent;
     width:324px;
     height:127px;
-    display:block;
+	margin: 0 auto;
 }
 
 .yimian-right-4-2{
     background: url("../images/product/yimian/pdct_ym_r_4_l2.png") no-repeat  transparent;
     width:340px;
     height:431px;
+	margin: 0 auto;
     display:inline-block;
 }
 
@@ -83,5 +122,6 @@
     background: url("../images/product/yimian/pdct_ym_r_4_r.png") no-repeat  transparent;
     width:325px;
     height:516px;
+	margin-top: 42px;
     display:inline-block;
 }
