@@ -55,8 +55,8 @@
                 <li class="stmenu">
                     <h3><a href="#" class="xialaguang"><span>立即购买</br>Mall</span></a></h3>   
                     <ul class="children">    
-                        <li><h3><a href="#"><span>QQ个性签名</span></a></h3></li>
-                        <li><h3><a href="#"><span>QQ留言代码</span></a></h3></li>
+                        <li><h3><a href="#"><span class="tmall_link"></span></a></h3></li>
+                        <li><h3><a href="#"><span class="weixin_link"></span></a></h3></li>
                     </ul>
                 </li>
                 <li class="stmenu"><h3><a href="<?php print $base_path ?>contactus" class="xialaguang"><span>联系我们</br>Contact</span></a></h3></li>

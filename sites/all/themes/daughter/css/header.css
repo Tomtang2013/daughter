@@ -180,3 +180,23 @@ text-decoration:none; font-size:12px;}
 .blank20 {clear: both;display: block;font-size: 1px;height: 20px;overflow: hidden;}
 .blank25 {clear: both;display: block;font-size: 1px;height: 25px;overflow: hidden;}
 
+.icon-link{
+    height:40px;
+    line-height:40px;
+}
+
+.weixin_link{
+    background: url("../images/home/weixin_link.png") no-repeat  transparent;
+   background-size:16px 16px;
+    width:16px;
+    height:16px;
+    display:inline-block;
+}
+
+.tmall_link{
+    background: url("../images/home/tmall_link.png") no-repeat  transparent;
+    background-size:16px 16px;
+    width:16px;
+    height:16px;
+    display:inline-block;
+}
