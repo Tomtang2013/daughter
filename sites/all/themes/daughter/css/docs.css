@@ -166,3 +166,17 @@ div { font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细�
     padding-bottom:10px;
     font-size:16px;
 }
+
+.header_text {
+    color:#ffffff;
+    padding:80px 20px 20px 40px;
+}
+
+.header_text_ch{
+    font-size: 40px;
+    font-weight: bold;
+}
+.header_text_en{
+    font-size: 40px;
+    font-weight: bold;
+}

@@ -7,3 +7,11 @@
      width:930px;
      float:left;
 }
+
+#qanda_second_header_left{
+    background: url("../images/qanda/QA_barner_l.jpg") no-repeat  transparent;
+    width:815px;
+    height:235px;
+    display:inline-block;
+    float: left;
+}

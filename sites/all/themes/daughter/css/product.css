@@ -1,0 +1,87 @@
+.product_second_header_left{
+    
+}
+
+.yimian{
+   margin: 0 auto;
+}
+.yimian-left{
+    width:550px;
+     display:inline-block;
+}
+.yimian-right{
+    width:550px;
+    display:inline-block;
+}
+
+.yimian-left-1{
+    background: url("../images/product/yimian/pdct_ym_l_1.png") no-repeat  transparent;
+    width:382px;
+    height:206px;
+    display:block;
+}
+
+.yimian-left-2{
+    background: url("../images/product/yimian/pdct_ym_l_2.png") no-repeat  transparent;
+    width:424px;
+    height:304px;
+    display:block;
+}
+
+.yimian-left-3{
+    background: url("../images/product/yimian/pdct_ym_l_3.png") no-repeat  transparent;
+    width:500px;
+    height:366px;
+    display:block;
+}
+
+.yimian-left-4{
+    background: url("../images/product/yimian/pdct_ym_l_4.png") no-repeat  transparent;
+    width:772px;
+    height:212px;
+    display:block;
+}
+
+
+.yimian-right-1{
+    background: url("../images/product/yimian/pdct_ym_r_1.png") no-repeat  transparent;
+    width:624px;
+    height:504px;
+    display:block;
+}
+
+
+.yimian-right-2{
+    background: url("../images/product/yimian/pdct_ym_r_2.png") no-repeat  transparent;
+    width:611px;
+    height:455px;
+    display:block;
+}
+
+.yimian-right-3{
+    background: url("../images/product/yimian/pdct_ym_r_3.png") no-repeat  transparent;
+    width:654px;
+    height:457px;
+    display:block;
+}
+
+.yimian-right-4-1{
+    background: url("../images/product/yimian/pdct_ym_4_l1.png") no-repeat  transparent;
+    width:324px;
+    height:127px;
+    display:block;
+}
+
+.yimian-right-4-2{
+    background: url("../images/product/yimian/pdct_ym_r_4_l2.png") no-repeat  transparent;
+    width:340px;
+    height:431px;
+    display:inline-block;
+}
+
+.yimian-right-4-r{
+    background: url("../images/product/yimian/pdct_ym_r_4_r.png") no-repeat  transparent;
+    width:325px;
+    height:516px;
+    display:inline-block;
+}

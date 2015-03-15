@@ -5,7 +5,7 @@
             <?php require_once 'first_header.tpl.php'; ?>
             <?php require_once 'product/product_header.tpl.php'; ?>
             <div class='main-content'>
-                <?php require_once 'product/product.tpl.php'; ?>
+                <?php require_once 'product/chunmian.tpl.php'; ?>
             </div>
         </div>
         <?php require_once 'daughter_footer.tpl.php'; ?>
