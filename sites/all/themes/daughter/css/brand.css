@@ -15,11 +15,11 @@
 }
 
 .brand-right-content{
-    width:580px;
+    width:630px;
     float:left;
 }
 .brand-right-img{
-    width:350px;
+    width:300px;
     float:left;
 }
 
@@ -29,3 +29,12 @@
 }
 
 
+.brand_qianjinyaomian_content{
+    margin-left:100px;
+    margin-bottom:20px;
+}
+
+.brand_qianjinyaomian_content p{
+    color:#666666;
+    padding-top: 20px;
+}

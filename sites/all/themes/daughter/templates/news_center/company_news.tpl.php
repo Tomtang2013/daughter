@@ -27,6 +27,9 @@
                     <div class="news-serch-box-form" >  
                         <select>
                             <option>千金静棉</option>
+                            <option>千金净棒</option>
+                            <option>千金医棉</option>
+                            <option>千金纯棉</option>
                         </select>
                         <div class="news-serch-box-form-btn"><a href="#">搜索</a></div>
                     </div>

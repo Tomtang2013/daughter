@@ -1,5 +1,9 @@
 <?php
-$theme = drupal_get_path('theme', 'daughter');
+    $theme = drupal_get_path('theme', 'daughter');
+    
+    $block_brand_qianjinyaomian = block_load('block', '5');
+    $block_brand_qianjinyaomian_output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block_brand_qianjinyaomian))));
+    
 ?>
 <div id="company_profile" >
     <div class="container">
@@ -11,9 +15,11 @@ $theme = drupal_get_path('theme', 'daughter');
         </div>
         <div class="brand-right" >
                
-                <div  class="brand-right-content" style="height:400px;">
+                <div  class="brand-right-content" style="">
                      <div  style="height:100px;background-color:green;">header</div>
-                     <div  style="height:300px;background-color:blue;">content</div>
+                     <div class="brand_qianjinyaomian_content">
+                        <?php print $block_brand_qianjinyaomian_output;?>
+                     </div>
                 </div>
                 <div  class="brand-right-img" style="height:400px;background-color:yellow;">
                 

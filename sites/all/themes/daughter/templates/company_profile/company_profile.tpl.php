@@ -13,14 +13,14 @@
     <div class="container">
         <div class='' >
             <div class=' content_item_title'  style="">About/千金药业</div>
-            <div class='company_item_content' style='height:500px;border: 1px solid;'>
+            <div class='company_item_content' >
                 
                 <?php print $block_qianjinyaoye_output;?>
             </div>
         </div>
         <div class='' style="">
              <div class='content_item_title' style="">About/千金静雅</div>
-             <div class='company_item_content' style='height:500px;border: 1px solid;'>
+             <div class='company_item_content' >
                   <?php print $block_qianjinjingya_output;?>
              </div>
         </div>

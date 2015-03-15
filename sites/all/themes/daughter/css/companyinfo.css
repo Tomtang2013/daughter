@@ -80,3 +80,9 @@
     width:290px;
     height:200px;
 }
+
+.about_company_content p{
+    font-size:18px;
+    color:#666666;
+    width:1024px;
+}
