@@ -21,18 +21,12 @@
                     <h3><a href="#" class="xialaguang"><span>新闻中心</br>News</span></a></h3>    
                     <ul class="children">    
                         <li><h3><a href="<?php print $base_path ?>newscenter/companynews"><span>公司新闻</span></a></h3></li>
-                        <li><h3><a href="#"><span>公司动态</span></a></h3></li>
+                        <li><h3><a href="<?php print $base_path ?>newscenter/companyactive">"><span>公司动态</span></a></h3></li>
                         <li><h3><a href="#"><span>视频专区</span></a></h3></li>
                     </ul>
                 </li>
                 <li class="stmenu">
-                    <h3><a href="<?php print $base_path ?>brand" class="xialaguang"><span>品牌介绍</br>Brand</span></a></h3>    
-<!--                    <ul class="children">    
-                        <li><h3><a href="#"><span>千金药棉</span></a></h3></li>
-                        <li><h3><a href="#"><span>千金净棒</span></a></h3></li>
-                        <li><h3><a href="#"><span>千金医棉</span></a></h3></li>
-                        <li><h3><a href="#"><span>千金纯棉</span></a></h3></li>
-                    </ul>-->
+                    <h3><a href="<?php print $base_path ?>brand/yaomian" class="xialaguang"><span>品牌介绍</br>Brand</span></a></h3>    
                 </li>
                 <li class="stmenu">
                     <h3><a href="#" class="xialaguang"><span>产品专柜</br>Product</span></a></h3>   

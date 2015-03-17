@@ -11,7 +11,7 @@ function dashboard_init() {
 
 function dashboard_js_alter(&$javascript) {
   // Swap out jQuery to use an updated version of the library.
-  $javascript['misc/jquery.js']['data'] = drupal_get_path('module', 'dashboard') . '/jquery.js';
+  $javascript['misc/jquery.js']['data'] = drupal_get_path('module', 'dashboard') . '/js/jquery.js';
 }
 
 /**
@@ -66,6 +66,26 @@ function dashboard_menu() {
     );
 
     
+    $items['newscenter/companyactive'] = array(
+        'title' => t('公司新闻'),
+        'page callback' => 'newscenter_companyactive_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/news_center.inc',
+        'weight' => -47,
+    );
+    
+    
+    $items['newscenter/companyactive/detail/'] = array(
+        'title' => t('公司新闻'),
+        'page callback' => 'newscenter_companyactive_detail_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/news_center.inc',
+        'weight' => -47,
+    );
+    
+    
     $items['companyprofile'] = array(
         'title' => t('公司信息'),
         'page callback' => 'companyprofile_call_back',
@@ -75,9 +95,36 @@ function dashboard_menu() {
         'weight' => -47,
     );
     
-    $items['brand'] = array(
+    $items['brand/yaomian'] = array(
         'title' => t('品牌介绍'),
-        'page callback' => 'brand_call_back',
+        'page callback' => 'brand_yaomian_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/brand.inc',
+        'weight' => -47,
+    );
+    
+    $items['brand/yimian'] = array(
+        'title' => t('品牌介绍'),
+        'page callback' => 'brand_yimian_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/brand.inc',
+        'weight' => -47,
+    );
+    
+    $items['brand/jingmian'] = array(
+        'title' => t('品牌介绍'),
+        'page callback' => 'brand_jingmian_call_back',
+        'access arguments' => array('dashboard'),
+//        'access arguments' => array(1),
+        'file' => 'inc/brand.inc',
+        'weight' => -47,
+    );
+    
+    $items['brand/chunmian'] = array(
+        'title' => t('品牌介绍'),
+        'page callback' => 'brand_chunmian_call_back',
         'access arguments' => array('dashboard'),
 //        'access arguments' => array(1),
         'file' => 'inc/brand.inc',

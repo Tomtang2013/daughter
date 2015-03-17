@@ -1,5 +1,8 @@
 <?php 
 global $base_path;
+$type = arg(1);
+
+$qanda_url = $base_path.'qanda';
 $result = db_query("SELECT nid FROM node WHERE type = :type order by created desc limit 16", 
         array(':type' => 'qanda'))->fetchAll();
 
@@ -10,14 +13,14 @@ foreach ($result as $row) {
     $qanda = new stdClass();
     $qanda->nid = $row->nid;
     $qanda->title = $node->title;
-    
+    $qanda->type = $node->field_qa_type['und'][0]['value'];
+    if(!filter_by_type($type,$qanda->type)) continue;
     $qanda->created = $node->created;
     $qanda->changed = $node->changed;
-    $qanda->type = $node->field_qa_type['und'][0]['value'];
+    
     $qanda->type_dec = prepare_type_dec($qanda->type);
     $qanda->question = $node->field_question['und'][0]['value'];
     $qanda->answer = $node->field_answer['und'][0]['value'];
-   
     
     $qanda_list[] = $qanda;
 }
@@ -30,23 +33,26 @@ function prepare_type_dec($type){
     if ($type == 3)
         return "千金小知识";
 }
+
+function filter_by_type($type,$qa_type){
+    if($type == '')
+        return $qa_type ==1;
+    return $type == $qa_type;
+}
 ?>
 
 <script type="text/javascript">
     jQuery(function(){
         jQuery('.expandableLink').each(function(){
             jQuery(this).click(function(){
-//                jQuery('.qanda-answer-item').each(function() {
-//                        jQuery(this).slideUp();
-//                });
-                        
+
                 var root = jQuery(this).parents().filter('.qand-qa-item');
                 var answer = root.find('.qanda-answer-item');
 
                 if (answer.is(':hidden')) {
-                    answer.slideToggle();
+                    answer.slideDown();
                 } else {
-                    answer.hide();
+//                    answer.hide();
                     answer.slideUp();
                 }
                 return false;
@@ -69,15 +75,15 @@ function prepare_type_dec($type){
                             Q & A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                     <div  class="menubox_item" > 
-                       <a class="item-text" href="">专家答疑</a>
+                        <a class="item-text" href="<?php print $qanda_url;?>/1">专家答疑</a>
                     </div>
                     <div class="item-bar"></div>
                     <div class="menubox_item" > 
-                        <a href="" class="item-text">健康分享</a>
+                        <a href="<?php print $qanda_url;?>/2" class="item-text">健康分享</a>
                         </div>
                     <div class="item-bar"></div>
                     <div class="menubox_item" > 
-                        <a class="item-text" href="">千金小知识 </a>
+                        <a class="item-text" href="<?php print $qanda_url;?>/3">千金小知识 </a>
                         </div>
                     <div class="item-bar"></div>
                 </div>

@@ -5,7 +5,7 @@
             <?php require_once 'first_header.tpl.php'; ?>
             <?php require_once 'brand/brand_header.tpl.php'; ?>
             <div class='main-content'>
-                <?php require_once 'brand/brand.tpl.php'; ?>
+                <?php require_once 'brand/brand-yimian.tpl.php'; ?>
             </div>
         </div>
         <?php require_once 'daughter_footer.tpl.php'; ?>

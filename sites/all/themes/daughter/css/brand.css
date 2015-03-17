@@ -53,14 +53,38 @@
 }
 
 .brand_logo{
-    background: url("../images/brand/ppjs_logo.png") no-repeat  transparent;
     width:82px;
     height:84px;
     display:inline-block;
     float: left;
 }
+
+.brand_logo_yaomian{
+    background: url("../images/brand/ppjs_logo.png") no-repeat  transparent;
+}
+.brand_logo_jingmian{
+    background: url("../images/brand/ppjs_jm_logo.png") no-repeat  transparent;
+}
+
+.brand_logo_yimian{
+    background: url("../images/brand/ppjs_ym_logo.png") no-repeat  transparent;
+}
+.brand_logo_chunmian{
+    background: url("../images/brand/ppjs_cm_logo.png") no-repeat  transparent;
+}
 .brand_title_yaomian{
     background: url("../images/brand/yaom_back.png") no-repeat  transparent;
+}
+
+.brand_title_jingmian{
+    background: url("../images/brand/jm_back.png") no-repeat  transparent;
+}
+.brand_title_yimian{
+    background: url("../images/brand/ym_back.png") no-repeat  transparent;
+}
+
+.brand_title_chunmian{
+    background: url("../images/brand/cm_back.png") no-repeat  transparent;
 }
 .brand_title{
     
@@ -85,4 +109,8 @@
     margin-right:10px;
     margin-top:32px;
     margin-bottom:10px;
+}
+
+.brand-bottom-item{
+    width:24%;height:54px;display:inline-block;
 }

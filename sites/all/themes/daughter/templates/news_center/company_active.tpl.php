@@ -1,6 +1,5 @@
 <?php
 global $base_path;
-
 $detail = "newscenter/companynews/detail/";
 $news_url = $base_path.'newscenter/companynews';
 $active_url = $news = $base_path.'newscenter/companyactive';
@@ -12,7 +11,7 @@ foreach ($result as $row) {
     $node = node_load($row->nid);
     $news = new stdClass();
     $news->type = $node->field_news_type['und'][0]['value'];
-    if($news->type !=1) continue;
+    if($news->type !=2) continue;
     $news->nid = $row->nid;
     $news->title = $node->title;
     $news->type = $node->type;
@@ -47,7 +46,7 @@ uasort($news_list, "compareNewsUpdateDate");
                     <div  class="content_item_title" style="margin-right:40px;" > 
                         新闻中心&nbsp;&nbsp;&nbsp;
                     </div>
-                    <div  class="menubox_item" > 
+                  <div  class="menubox_item" > 
                         <a class="item-text" href="<?php print $news_url;?>">公司新闻</a>
                     </div>
                     <div class="item-bar"></div>
