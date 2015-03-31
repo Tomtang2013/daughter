@@ -21,7 +21,7 @@
                     <h3><a href="#" class="xialaguang"><span>新闻中心</br>News</span></a></h3>    
                     <ul class="children">    
                         <li><h3><a href="<?php print $base_path ?>newscenter/companynews"><span>公司新闻</span></a></h3></li>
-                        <li><h3><a href="<?php print $base_path ?>newscenter/companyactive">"><span>公司动态</span></a></h3></li>
+                        <li><h3><a href="<?php print $base_path ?>newscenter/companyactive"><span>公司动态</span></a></h3></li>
                         <li><h3><a href="#"><span>视频专区</span></a></h3></li>
                     </ul>
                 </li>
